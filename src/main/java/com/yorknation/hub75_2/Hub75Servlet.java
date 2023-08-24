@@ -70,7 +70,7 @@ public class Hub75Servlet extends HttpServlet
 		
 
 		
-		request.getRequestDispatcher("main.jsp").forward(request, response);
+		request.getRequestDispatcher("MainJsp").forward(request, response);
 	}
 
 }

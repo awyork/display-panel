@@ -23,10 +23,6 @@ public class Logout extends HttpServlet
 	{
 		HttpSession session = request.getSession();
 		
-		Enumeration<String> reqAttribs = request.getAttributeNames();
-		
-		Enumeration<String> attribs =  session.getAttributeNames();
-		
 		String logoutURL =  "https://yorknation-tomcat-test.auth.us-east-1.amazoncognito.com/"
 				+ "logout?client_id=45r3u25trcidotmq5gufilpnaf&response_type=code"
 				+ "&logout_uri=";

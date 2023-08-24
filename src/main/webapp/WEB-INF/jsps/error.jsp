@@ -58,7 +58,7 @@
 	</c:if>
 	<div class="row">
 		<div class="col">
-			<a href="${pageContext.request.contextPath}/home">Go Back Home</a>
+			<a href="${pageContext.request.contextPath}/index.jsp">Go Back Home</a>
 		</div>
 	</div>
 </body>
