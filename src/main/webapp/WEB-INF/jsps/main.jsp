@@ -1,3 +1,7 @@
+<%@page import="org.bsworks.catalina.authenticator.oidc.BaseOpenIDConnectAuthenticator.AuthEndpointDesc"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
+<%@ page isELIgnored="false" %>
 <html>
 <%@ page import="java.util.Date" %>
 <head>
@@ -6,6 +10,7 @@
 </head>
 <body>
 <h1><%= application.getServletContextName() %></h1>
+
 <a href="../LogoutServlet">Logout</a>
 <p>Welcome to the test site: <%= session.getAttribute("uname") %></p>
 <p>Email: <%= session.getAttribute("emailId") %></p>
