@@ -23,7 +23,7 @@
 		<servlet-name>MainJsp</servlet-name>
 		<jsp-file>/WEB-INF/jsps/main.jsp</jsp-file>
 	</servlet>
-	
+
 	<servlet-mapping>
 		<servlet-name>HUB75_2</servlet-name>
 		<url-pattern>/x/main</url-pattern>
@@ -52,6 +52,12 @@
 			<transport-guarantee>NONE</transport-guarantee>
 		</user-data-constraint>
 	</security-constraint>
+
+    <!-- Took too long answering the Cognito stuff -->
+	<error-page>
+		<error-code>408</error-code>
+		<location>/408error.jsp</location>
+	</error-page>
 
 	<!-- <login-config> <auth-method>BASIC</auth-method> </login-config> -->
 
