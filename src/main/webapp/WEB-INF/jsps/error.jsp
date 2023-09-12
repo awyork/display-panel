@@ -1,9 +1,10 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page import="org.apache.catalina.authenticator.SingleSignOn"%>
 <%@page import="org.apache.catalina.realm.MemoryRealm"%>
 <%@page import="org.bsworks.catalina.authenticator.oidc.BaseOpenIDConnectAuthenticator.AuthEndpointDesc"%>
 <%@page pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page isELIgnored="false"%>
+<%@page isELIgnored="false"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,8 +25,8 @@
 	%>
 	<%=request.getAttribute("org.bsworks.oidc.authEndpoints")%>
 	<%
-	AuthEndpointDesc desc = (AuthEndpointDesc) ((java.util.ArrayList) request
-			.getAttribute("org.bsworks.oidc.authEndpoints")).get(0);
+	AuthEndpointDesc desc = (AuthEndpointDesc) ((java.util.ArrayList) 
+			request.getAttribute("org.bsworks.oidc.authEndpoints")).get(0);
 	out.print(desc.getUrl());
 	%>
 	<p>

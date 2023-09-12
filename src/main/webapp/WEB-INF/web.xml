@@ -36,6 +36,12 @@
 		<servlet-name>MainJsp</servlet-name>
 		<url-pattern>/x/MainJsp</url-pattern>
 	</servlet-mapping>
+	
+	<!-- Took too long answering the Cognito stuff -->
+	<error-page>
+		<error-code>408</error-code>
+		<location>/408error.jsp</location>
+	</error-page>
 
 	<security-constraint>
 		<web-resource-collection>
@@ -52,14 +58,6 @@
 			<transport-guarantee>NONE</transport-guarantee>
 		</user-data-constraint>
 	</security-constraint>
-
-    <!-- Took too long answering the Cognito stuff -->
-	<error-page>
-		<error-code>408</error-code>
-		<location>/408error.jsp</location>
-	</error-page>
-
-	<!-- <login-config> <auth-method>BASIC</auth-method> </login-config> -->
 
 	<login-config>
 		<auth-method>FORM</auth-method>
