@@ -1,7 +1,7 @@
 <%@page import="org.bsworks.catalina.authenticator.oidc.BaseOpenIDConnectAuthenticator.AuthEndpointDesc"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
-<%@ page isELIgnored="false" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
