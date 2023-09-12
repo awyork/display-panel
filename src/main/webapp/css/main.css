@@ -1,9 +1,19 @@
 @charset "ISO-8859-1";
 
 body {
-  background-color: darkgrey;
+	background-color: darkgrey;
+}
+
+body.main {
+	background-image: url("../x/images/3920.jpg");
 }
 
 img {
-  background-color: white;
+	background-color: white;
+}
+
+div {
+	background-color: darkgrey;
+	padding-left: 10px;
+	padding-right: 10px;
 }
